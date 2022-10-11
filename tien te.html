@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text " placeholder="nhap tien" id=" money">
+<select name=" tien" id ="d1">
+    <option value="1"> vnd</option>
+    <option value="23000 "> usd</option>
+</select>
+<select name="tien1" id ="d2">
+    <option value="1">vnd</option>
+    <option value="23000"> usd</option>
+</select>
+<button type="button" onclick =" change()"> chuyen</button>
+<p id=" ketqua"></p>
+</body>
+<script>
+    function change (){
+        let money=+document.getElementById(" money").valueOf();
+        let d1=+ document.getElementById("d1").valueOf();
+        let d2 =+document.getElementById("d2").valueOf();
+        let res= money*d1/d2;
+        document.getElementById("ktqua").innerHTML= res;
+    }
+</script>
+</html>
